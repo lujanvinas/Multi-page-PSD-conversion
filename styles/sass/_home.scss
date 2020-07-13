@@ -3,12 +3,244 @@
 header{
     background-image: url('assets/home-header.jpg');
     background-repeat: no-repeat;
-    background-size: center;
+    background-size: cover;
     height: 700px;
-    width: 100%;
-    max-width: 1440px;
+    width: 100vw;
     position: relative;
+    margin:0;
 
 }
+
+
+.heading{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+
+}
+
+.cruiseship img{
+    position: absolute;
+    right:0;
+    top:23%;
+    width: 60%;
+
+    
+}
+
+
+
+// section-1 styles
+
+.section-1{
+    padding:120px 0;
+
+
+    .flexContainer{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+
+        .flexItem{
+            width: 50%;
+            margin-bottom: 50px;
+            flex: 1 0 550px;
+            
+            }
+
+            h2{
+                display: inline-block;
+               
+            }
+
+}
+
+.flexItem p{
+    margin-left: 50px;
+}
+
+.pin{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:$colorBtn;
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+    
+
+
+    i{
+        font-size: 20px;
+        position: absolute;
+        top: 10px;
+        right: 12px;
+
+
+    }
+
+}
+
+.item2 i{
+    right:8px;
+}
+
+// section-2 styles
+
+
+.section-2{
+    background-color: $primaryColor;
+    width: 100%;
+    position:relative;
+    
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        position:relative;
+        padding:90px 0;
+
+        .box{
+            width: 50%;
+
+            p{
+                color:$secondaryColor;
+
+            }
+        }
+    }
+
+}
+
+.empty{
+    width: 50%;
+}
+
+.locations{
+    text-align: right;
+    padding-right: 100px;
+    padding-top: 50px;
+
+
+    p{
+        text-align: left;
+    }
+}
+
+.programs{
+    padding-left: 100px;
+}
+
+
+.section-2 img{
+    width: 43%;
+    box-shadow: 17px 17px $colorBtn;
+    position: absolute;
+}
+
+.bow img{
+    box-shadow: -17px 17px $colorBtn;
+    right:0;
+    bottom:-50px;
+    
+
+}
+
+.yacht img{
+    left:0;
+    top:-50px;
+}
+
+
+// section-3 styles
+
+
+.section-3{
+    text-align: center;
+    padding:100px 0;
+
+    p{
+        text-align: left;
+    }
+}
+
+
+// section-4 styles
+
+.section-4 {
+    width: 100vw;
+ 
+}
+
+
+// section-5 styles
+
+
+.winTrip{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 120px 0;
+    
+
+    .aside{
+        flex: 1 0 400px;
+        
+
+        img{
+           box-shadow: -17px 17px $colorBtn;
+           width: 400px;
+           padding-top: 30px;
+           margin-bottom: 40px;
+        }
+    }
+}
+
+.info{
+    width: 60%;
+    flex: 1 0 auto;
+}
+
+
+// section-6 styles
+
+.section-6{
+    background-color: $primaryColor;
+    padding:80px 0;
+
+    .gallery{
+        display: flex;
+        flex-wrap:wrap;
+        width:100%;
+        justify-content: space-between;
+    
+        .galleryItem{
+            flex:0 1 auto;
+
+            
+            
+        }
+    }
+
+}
+
+
+// footer styles
+
+footer{
+    background-color: $colorBtn;
+    text-align: center;
+    color:$primaryColor;
+    padding:10px 0;
+}
+
+
 
 

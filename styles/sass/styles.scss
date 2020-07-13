@@ -27,7 +27,8 @@ body{
 
 h1,
 h2,
-h3{
+h3,
+h4{
     text-transform: uppercase;
 }
 
@@ -50,11 +51,22 @@ h3{
     font-size: 4rem;
     line-height: 58px;
     letter-spacing: 1.3px;
-    color:#ffffff;
+    color:$secondaryColor;
 
 }
 
-p{
+
+h4{
+    font-family: $baseFont;
+    font-size: 2.5rem;
+    line-height: 58px;
+    letter-spacing: 0.8px;
+    color:$colorBtn;
+
+}
+
+p,
+h5{
     font-family: $secondaryFont;
     font-size: 2rem;
     line-height: 28px;
@@ -128,202 +140,4 @@ a:hover span{
     padding-bottom: 5px;
     
 }
-
-
-.heading{
-    width: 500px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-
-
-}
-
-.cruiseship img{
-    position: absolute;
-    right:0;
-    top:23%;
-    width: 60%;
-
-    
-}
-
-
-
-// section one styles
-
-.section-1{
-    padding:120px 0;
-
-
-    .flexContainer{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        }
-
-        .flexItem{
-            width: 50%;
-            margin-bottom: 50px;
-            flex: 1 0 550px;
-            
-            }
-
-            h2{
-                display: inline-block;
-               
-            }
-
-}
-
-.flexItem p{
-    margin-left: 50px;
-}
-
-.pin{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color:$colorBtn;
-    display: inline-block;
-    position: relative;
-    margin-right: 5px;
-    
-
-
-    i{
-        font-size: 20px;
-        position: absolute;
-        top: 10px;
-        right: 12px;
-
-
-    }
-
-}
-
-.item2 i{
-    right:8px;
-}
-
-// section two styles
-
-
-.section-2{
-    background-color: $primaryColor;
-    width: 100%;
-    position:relative;
-    
-
-    .container{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        position:relative;
-        padding:90px 0;
-
-        .box{
-            width: 50%;
-
-            p{
-                color:$secondaryColor;
-
-            }
-        }
-    }
-
-}
-
-.empty{
-    width: 50%;
-}
-
-.locations{
-    text-align: right;
-    padding-right: 100px;
-    padding-top: 50px;
-
-
-    p{
-        text-align: left;
-    }
-}
-
-.programs{
-    padding-left: 100px;
-}
-
-
-.section-2 img{
-    width: 43%;
-    box-shadow: 17px 17px $colorBtn;
-    position: absolute;
-    // display: none;
-}
-
-.bow img{
-    box-shadow: -17px 17px $colorBtn;
-    right:0;
-    bottom:-50px;
-    
-
-}
-
-.yacht img{
-    left:0;
-    top:-50px;
-}
-
-
-// section three styles
-
-
-.section-3{
-    text-align: center;
-    padding:100px 0;
-
-    p{
-        text-align: left;
-    }
-}
-
-
-// section four styles
-
-.section-4 {
-    width: 100%;
- 
-}
-
-
-// section five styles
-
-
-.winTrip{
-    display:flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 120px 0;
-    
-
-    .aside{
-        flex: 1 0 400px;
-        
-
-        img{
-           box-shadow: -17px 17px $colorBtn;
-           width: 400px;
-           padding-top: 30px;
-        }
-    }
-}
-
-.info{
-    width: 60%;
-    flex: 1 0 450px;
-}
-
 

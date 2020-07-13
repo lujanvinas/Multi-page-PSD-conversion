@@ -215,11 +215,124 @@ textarea {
 header {
   background-image: url("assets/home-header.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
   height: 700px;
   width: 100vw;
+  max-width: 1440px;
   position: relative;
   margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  width: 85%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #EAFEFC;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: "IM Fell English", serif;
+  font-size: 7.9rem;
+  color: #FDD908;
+}
+
+h2 {
+  font-family: "IM Fell English", serif;
+  font-size: 4.5rem;
+  color: #0D457F;
+  line-height: 99.8px;
+}
+
+h3 {
+  font-family: "IM Fell English", serif;
+  font-size: 4rem;
+  line-height: 58px;
+  letter-spacing: 1.3px;
+  color: #ffffff;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+
+img {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  padding: 17px;
+  color: #0D457F;
+  font-family: "IM Fell English", serif;
+  font-size: 2.4rem;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 40px;
+  border: none;
+  background-color: #FDD908;
+  text-transform: uppercase;
+}
+
+button:hover,
+button:focus {
+  color: #FFFFFF;
+  background-color: #042259;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+nav li {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 29px;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-transform: capitalize;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  padding-right: 50px;
+}
+
+a:hover span {
+  border-bottom: 3px solid #FDD908;
+  padding-bottom: 5px;
 }
 
 .heading {
@@ -433,348 +546,4 @@ footer {
   text-align: center;
   color: #0D457F;
   padding: 10px 0;
-}
-
-.blog .section-1 {
-  padding-top: 120px;
-  padding-bottom: 20px;
-}
-
-.blog header {
-  background-image: url("assets/blog-header.jpg");
-  background-size: cover;
-}
-
-.blog header h1 {
-  color: #FFFFFF;
-}
-
-.blog .heading {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.imageLeft {
-  width: 100%;
-  position: absolute;
-  top: -30px;
-}
-
-.imageLeft img {
-  width: 84%;
-}
-
-.blog .section-1 {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.containerAside {
-  width: 40%;
-  position: relative;
-}
-
-.containerAside .aside {
-  width: 70%;
-  padding: 455px 30px 30px 30px;
-  background-color: #0D457F;
-  margin: 0 100px;
-}
-
-.containerAside .aside p {
-  color: #FFFFFF;
-}
-
-.aside .recentPosts {
-  padding-top: 40px;
-}
-
-.aside .recentPosts li {
-  list-style-type: disc;
-  list-style-position: inside;
-  color: #FFFFFF;
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  line-height: 28px;
-  letter-spacing: 1px;
-}
-
-.containerContent {
-  width: 60%;
-  border-bottom: 3px solid #FDD908;
-  border-left: 3px solid #FDD908;
-  position: relative;
-}
-
-.containerContent .content {
-  padding: 430px 80px 80px 80px;
-}
-
-.containerContent .content .nextDestination p {
-  margin: 20px 0;
-}
-
-.imageRight {
-  position: absolute;
-  top: -210px;
-}
-
-.imageRight img {
-  -webkit-box-shadow: -17px 17px #FDD908;
-          box-shadow: -17px 17px #FDD908;
-}
-
-.wrapper-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.containerComments {
-  width: 60%;
-  padding: 80px;
-}
-
-.containerComments h3 {
-  color: #0D457F;
-}
-
-h5 {
-  font-weight: bold;
-  color: #0D457F;
-}
-
-.comment {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 20px 0;
-}
-
-.comment .imageComment {
-  width: 15%;
-}
-
-.comment img {
-  width: 100%;
-}
-
-.comment .text {
-  width: 85%;
-  padding-left: 40px;
-}
-
-form {
-  width: 60%;
-  padding: 20px 80px;
-}
-
-form button {
-  width: 100%;
-  padding: 10px;
-  color: #FDD908;
-  background-color: #0D457F;
-}
-
-input {
-  width: 46%;
-  height: 40px;
-  border: none;
-  border-bottom: 2px solid #FDD908;
-  background-color: #EAFEFC;
-  padding: 0 30px;
-}
-
-input[type="text"][class="name"] {
-  margin-right: 40px;
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  line-height: 28px;
-  letter-spacing: 1px;
-}
-
-input[type="text"] {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  line-height: 28px;
-  letter-spacing: 1px;
-}
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  line-height: 28px;
-  letter-spacing: 1px;
-}
-
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  line-height: 28px;
-  letter-spacing: 1px;
-}
-
-input::-ms-input-placeholder,
-textarea::-ms-input-placeholder {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  line-height: 28px;
-  letter-spacing: 1px;
-}
-
-input::placeholder,
-textarea::placeholder {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  line-height: 28px;
-  letter-spacing: 1px;
-}
-
-textarea {
-  width: 100%;
-  border: 2px solid #FDD908;
-  background-color: #EAFEFC;
-  padding: 30px;
-  margin-top: 40px;
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  line-height: 28px;
-  letter-spacing: 1px;
-}
-
-label {
-  display: none;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-.wrapper {
-  width: 85%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-body {
-  margin: 0;
-  background-color: #EAFEFC;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  text-transform: uppercase;
-}
-
-h1 {
-  font-family: "IM Fell English", serif;
-  font-size: 7.9rem;
-  color: #FDD908;
-}
-
-h2 {
-  font-family: "IM Fell English", serif;
-  font-size: 4.5rem;
-  color: #0D457F;
-  line-height: 99.8px;
-}
-
-h3 {
-  font-family: "IM Fell English", serif;
-  font-size: 4rem;
-  line-height: 58px;
-  letter-spacing: 1.3px;
-  color: #FFFFFF;
-}
-
-h4 {
-  font-family: "IM Fell English", serif;
-  font-size: 2.5rem;
-  line-height: 58px;
-  letter-spacing: 0.8px;
-  color: #FDD908;
-}
-
-p,
-h5 {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  line-height: 28px;
-  letter-spacing: 1px;
-}
-
-img {
-  max-width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-button {
-  padding: 17px;
-  color: #0D457F;
-  font-family: "IM Fell English", serif;
-  font-size: 2.4rem;
-  line-height: 28px;
-  text-align: center;
-  margin-top: 40px;
-  border: none;
-  background-color: #FDD908;
-  text-transform: uppercase;
-}
-
-button:hover,
-button:focus {
-  color: #FFFFFF;
-  background-color: #042259;
-}
-
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-nav li {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 2rem;
-  text-align: center;
-  line-height: 29px;
-  letter-spacing: 1px;
-  display: inline-block;
-  text-transform: capitalize;
-  margin: 0 auto;
-  padding: 50px 0;
-}
-
-nav li a {
-  text-decoration: none;
-  color: #FFFFFF;
-  padding-right: 50px;
-}
-
-a:hover span {
-  border-bottom: 3px solid #FDD908;
-  padding-bottom: 5px;
 }

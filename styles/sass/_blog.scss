@@ -1,0 +1,229 @@
+
+// section One styles
+
+
+.blog .section-1{
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+.blog header{
+    background-image: url('assets/blog-header.jpg');
+    background-size: cover;
+
+    h1{
+        color:$secondaryColor;
+    }
+    
+}
+
+
+.blog .heading{
+    justify-content: center;
+
+}
+
+
+.imageLeft {
+    width: 100%;
+    position: absolute;
+    top:-30px;
+
+    img{
+        width: 84%;
+
+    }
+    
+
+}
+
+
+.blog .section-1 {
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+.containerAside{
+    width: 40%;
+    position:relative;
+
+    .aside{
+        width: 70%;
+        padding:455px 30px 30px 30px;
+        background-color:$primaryColor;
+        margin:0 100px;
+
+        p{
+    
+            color:$secondaryColor;
+        }
+
+    }
+}
+
+
+
+.aside .recentPosts{
+    padding-top: 40px;
+
+    li{
+        list-style-type: disc;
+        list-style-position: inside;
+        color:$secondaryColor;
+        font-family: $secondaryFont;
+        font-size: 2rem;
+        line-height: 28px;
+        letter-spacing: 1px; 
+    }
+
+}
+
+
+.containerContent{
+    width: 60%;
+    border-bottom:3px solid $colorBtn;
+    border-left:3px solid $colorBtn;
+    position:relative;
+
+    .content{
+        padding:430px 80px 80px 80px;
+
+
+        .nextDestination p{
+            margin:20px 0;
+        }
+    }
+
+}
+
+.imageRight{
+    position:absolute;
+    top:-210px;
+    
+    img{
+        box-shadow: -17px 17px $colorBtn;
+        
+    }
+}
+
+
+
+// section Two styles
+
+
+.wrapper-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .containerComments{
+        width: 60%;
+        padding:80px;
+        
+
+        h3{
+            color:$primaryColor;
+        }
+
+    }
+
+
+
+h5{
+    font-weight: bold;
+    color:$primaryColor;
+}
+
+
+.comment{
+    width: 100%;
+    display: flex;
+    padding:20px 0;
+
+
+    .imageComment {
+        width: 15%;
+    }
+
+        img{
+        width: 100%;
+
+    }
+}
+
+.comment .text{
+    width: 85%;
+    padding-left:40px;
+}
+
+
+// form styles
+
+form{
+    width: 60%;
+    padding: 20px 80px;
+
+    button{
+        width: 100%;
+        padding:10px;
+        color:$colorBtn;
+        background-color: $primaryColor;
+    }
+}
+
+input{
+    width: 46%;
+    height: 40px;
+    border:none;
+    border-bottom: 2px solid $colorBtn;
+    background-color: $lightColor;
+    padding:0 30px;
+
+}
+
+input[type="text"][class="name"]{
+    margin-right: 40px;
+    font-family: $secondaryFont;
+    font-size: 2rem;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+input[type="text"]{
+    font-family: $secondaryFont;
+    font-size: 2rem;
+    line-height: 28px;
+    letter-spacing: 1px;
+
+}
+
+
+input::placeholder,
+textarea::placeholder{
+    font-family: $secondaryFont;
+    font-size: 2rem;
+    line-height: 28px;
+    letter-spacing: 1px;
+    
+
+}
+
+
+textarea{
+    width: 100%;
+    border: 2px solid $colorBtn;
+    background-color: $lightColor;
+    padding:30px;
+    margin-top: 40px;
+    font-family: $secondaryFont;
+    font-size: 2rem;
+    line-height: 28px;
+    letter-spacing: 1px;
+
+}
+
+
+label{
+    display: none;
+}
