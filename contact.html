@@ -9,7 +9,7 @@
 
     <title>Contact</title>
 </head>
-<body>
+<body class="contact">
 
     <header>
         <div class="wrapper">
@@ -21,40 +21,47 @@
                     <li><a href="contact.html"><span>contact</span></a></li>
                 </ul>
             </nav>
-            <div class="heading">
-                <h1>blog</h1>
+            <div class="feature">
+                <h1>get in touch</h1>
             </div>
         </div>
     </header>
 
-    <aside>
-        <div class="socialMedia">
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>    
-            <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
-        </div>
-    </aside>
-    <div class="contact">
-        <p>info@email.com</p>
-        <p> 123-456-7890</p>
-        <p>123 Queen Street West, Unit 10</p>
-        <p>Toronto, ON</p>
-        <p>M5V2D5, Canada</p>
+
+    <div class="section-1">
+
+        <aside>
+            <div class="socialMedia">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>    
+                <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        
+            <div class="contactUs">
+                <p>info@email.com</p>
+                <p> 123-456-7890</p>
+                <p>123 Queen Street West, Unit 10</p>
+                <p>Toronto, ON</p>
+                <p>M5V2D5, Canada</p>
+            </div>
+        </aside>    
+
+
+        <form class="formContact" action="comment">
+            <label for="name">name</label>
+            <input type="text" class="name" placeholder="Name">
+
+            <label for="email">email</label>
+            <input type="text" class="email"  placeholder="Email address">
+            
+            <textarea type="comments" rows="10" cols="60" placeholder="Comment"></textarea>
+            
+            <button>submit</button>
+        </form> 
+
     </div>
 
-
-    <form action="submit">
-        <label for="name">name</label>
-        <input type="text" placeholder="Name">
-
-        <label for="email">email</label>
-        <input type="text" placeholder="Email address">
-        
-        <textarea type="comments" rows="10" cols="60" placeholder="Message"></textarea>
-        
-        <button>submit</button>
-    </form>
 
     <footer>
         <p>Copyright &copy 2019 HackerYou</p>

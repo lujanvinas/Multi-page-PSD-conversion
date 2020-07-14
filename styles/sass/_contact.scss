@@ -1,0 +1,152 @@
+
+.contact header{
+    background-image: url('assets/contact-header.jpg');
+    background-size: cover;
+    background-position: center;
+
+    h1{
+        color:$secondaryColor;
+    }
+
+}
+
+.contact .feature{
+    justify-content: center;
+}
+
+// section-1 styles
+
+
+
+.contact aside {
+    width: 50%;
+    text-align: left;
+
+    i{
+        font-size: 3rem;
+        padding:50px 25px 25px 0;
+        color:$primaryColor;
+    }
+}
+
+
+.contact aside p:first-of-type {
+    padding-bottom:40px;
+
+}
+
+.contact i:hover {
+    color: $colorBtn;
+
+}
+
+.contact .section-1 {
+    position:relative;
+    padding: 100px 100px 200px 150px;
+
+}
+
+
+.formContact{
+    background-color: $primaryColor;
+    position:absolute;
+    top:-130px;
+    right:18px;
+    box-shadow: 17px 17px $colorBtn;
+    padding-top:80px;
+
+
+
+    button{
+        width: 100%;
+        padding:10px;
+        color:$primaryColor;
+        background-color: $colorBtn;
+        border: 2px solid transparent;
+    }
+}
+
+.formContact button:hover{
+    color:$colorBtn;
+    background-color: $primaryColor;
+    border: 2px solid $colorBtn;
+
+}
+
+.formContact input{
+    background-color: $primaryColor;
+    color:$secondaryColor;
+    
+
+}
+
+.formContact input[type="text"][class="name"]{
+    font-family: $secondaryFont;
+}
+
+
+.formContact input::placeholder,
+.formContact textarea::placeholder{
+   color:$secondaryColor;
+
+}
+
+
+.formContact textarea{
+    color:$secondaryColor;
+    background-color: $primaryColor;
+
+}
+
+.formContact label{
+    display: none;
+}
+
+
+
+@media (max-width:1200px){
+
+    .contact .section-1{
+        padding:50px;
+
+    }
+
+    .contact header{
+        height: 100vh;
+    }
+
+
+    .contact aside {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+
+    .formContact {
+        position: static;
+        width:100%;
+       
+    }
+
+    .contact form input {
+        width: 100%;
+        height: 80px;
+        padding:10px;
+        
+    }
+
+    .contact form textarea{
+        padding:10px;
+    }
+}
+
+@media (max-width:600px){
+    .contact nav{
+        display:none;
+    }
+
+    .contact h1{
+        padding-top: 100px;
+    }
+}

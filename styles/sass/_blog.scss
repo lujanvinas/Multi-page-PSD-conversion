@@ -17,7 +17,7 @@
 }
 
 
-.blog .heading{
+.blog .feature{
     justify-content: center;
 
 }
@@ -33,7 +33,6 @@
 
     }
     
-
 }
 
 
@@ -226,4 +225,158 @@ textarea{
 
 label{
     display: none;
+}
+
+
+
+// MediaQueries
+
+
+@media (max-width:1200px){
+
+    .blog header {
+        height: 100vh;
+    }
+
+    .blog .feature {
+        height: 100vh;
+        justify-content: flex-end;
+    }
+
+
+    .containerAside {
+        width: 100%;
+        position: static;
+
+        .aside{
+        padding: 30px;
+        margin: 40px auto;
+        width:82%;
+        }
+        
+    }
+
+    .imageLeft {
+        width: 82%;
+        position: static;
+        display: block;
+        margin: 0 auto;
+        
+        img {
+        width: 100%;
+        }
+    }
+
+
+    .containerContent {
+        width: 100%;
+        position: static;
+        border:none;
+    
+        .imageRight {
+        position: static;
+        width: 82%;
+        margin:0 auto;
+        display: block;
+        }
+    }
+
+    .containerContent .content {
+        padding: 80px;
+    }
+
+
+    .containerComments {
+        width: 100%;
+        padding: 80px;
+        padding-top: 0;
+
+        .comment {
+            width: 100%;
+            padding: 30px 0;
+        }
+    }
+
+
+    .wrapper-flex {
+        justify-content: center;
+    }
+
+    form {
+        width: 100%;
+        padding: 80px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .blog form input {
+        width: 100%;
+        height: 80px;
+        padding:10px;
+        
+    }
+
+    .blog form textarea{
+        padding:10px;
+    }
+
+
+    .containerComments {
+        width: 100%;
+        padding: 30px 80px;
+    }
+
+    .containerContent .content {
+        padding: 30px 80px;
+    }
+
+}
+
+@media (max-width:600px){
+
+    .blog nav{
+        display: none;
+    }
+
+    .blog h1{
+        padding-top: 200px;
+    }
+    
+    .imageLeft {
+        width: 100%;
+    }
+
+
+    .containerAside .aside {
+        width: 100%;
+    }
+
+    .containerContent .content {
+        padding: 30px;
+    }
+
+    .containerContent .imageRight {
+        width: 100%;
+    }
+
+    .nextDestination {
+        width: 100%;
+    
+        h2{
+        font-size: 3.5rem;
+        }
+    }
+
+
+    .containerComments {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .blog form{
+        padding: 30px;
+    }
+
 }
