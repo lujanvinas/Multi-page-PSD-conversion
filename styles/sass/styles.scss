@@ -6,26 +6,22 @@
 
 
 
-
-
-
 html{
     font-size: 62.5%;
 }
 
+body{ 
+    background-color: $lightColor;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
 .wrapper{
-    width: 85%;
-    max-width: 1280px;
-    margin:0 auto;
+    width: 90%;
+    margin: 0 auto;
     padding:0;
 }
 
-body{ 
-    margin:0;
-    background-color: $lightColor;
-    
-
-}
 
 h1,
 h2,

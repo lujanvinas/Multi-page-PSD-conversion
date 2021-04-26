@@ -212,6 +212,10 @@ textarea {
   overflow: hidden;
 }
 
+img {
+  width: 100%;
+}
+
 header {
   background-image: url("assets/home-header.jpg");
   background-repeat: no-repeat;
@@ -242,17 +246,30 @@ header {
 
 .cruiseship {
   width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: -120px;
+  width: 50%;
 }
 
 .cruiseship img {
-  position: absolute;
-  right: 0;
-  top: 23%;
-  width: 60%;
+  max-width: 1000px;
+}
+
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5,
+.section-6,
+footer {
+  margin: 0 auto;
+  width: 100vw;
 }
 
 .section-1 {
   padding: 120px 0;
+  margin: 0 auto;
 }
 
 .section-1 .flexContainer {
@@ -307,8 +324,6 @@ header {
 
 .section-2 {
   background-color: #0D457F;
-  width: 100%;
-  position: relative;
 }
 
 .section-2 .container {
@@ -318,11 +333,12 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  padding: 50px 0;
+  position: relative;
 }
 
 .section-2 .container .box {
   width: 50%;
+  position: relative;
 }
 
 .section-2 .container .box p {
@@ -331,8 +347,7 @@ header {
 
 .locations {
   text-align: right;
-  padding-right: 100px;
-  padding-top: 50px;
+  padding: 50px 150px;
 }
 
 .locations p {
@@ -340,39 +355,40 @@ header {
 }
 
 .programs {
-  padding-left: 100px;
+  padding-left: 120px;
+  padding-top: 100px;
+  padding-right: 170px;
 }
 
-.section-2 img {
-  width: 43%;
-  -webkit-box-shadow: 17px 17px #FDD908;
-          box-shadow: 17px 17px #FDD908;
-  position: absolute;
+.bow {
+  padding-left: 150px;
 }
 
 .bow img {
   -webkit-box-shadow: -17px 17px #FDD908;
           box-shadow: -17px 17px #FDD908;
-  right: 0;
-  bottom: -50px;
+  bottom: -110px;
+  position: relative;
+}
+
+.yacht {
+  padding-right: 150px;
 }
 
 .yacht img {
-  left: 0;
+  -webkit-box-shadow: 17px 17px #FDD908;
+          box-shadow: 17px 17px #FDD908;
   top: -50px;
+  position: relative;
 }
 
 .section-3 {
   text-align: center;
-  padding: 100px 0;
+  padding: 150px 0 100px 0;
 }
 
 .section-3 p {
   text-align: left;
-}
-
-.section-4 {
-  width: 100vw;
 }
 
 .winTrip {
@@ -389,12 +405,12 @@ header {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 400px;
           flex: 1 0 400px;
+  padding-right: 100px;
 }
 
 .winTrip .aside img {
   -webkit-box-shadow: -17px 17px #FDD908;
           box-shadow: -17px 17px #FDD908;
-  width: 400px;
   padding-top: 30px;
   margin-bottom: 40px;
 }
@@ -427,7 +443,7 @@ header {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
-  width: 400px;
+  width: 32%;
 }
 
 footer {
@@ -438,9 +454,6 @@ footer {
 }
 
 @media (max-width: 1200px) {
-  header {
-    height: auto;
-  }
   header nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -454,22 +467,12 @@ footer {
   }
   .feature {
     width: 100%;
-    height: auto;
     display: block;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 150px;
   }
   .cruiseship {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    padding: 50px 0;
-  }
-  .cruiseship img {
-    position: static;
-    margin: 0 auto;
-    display: block;
-    width: 600px;
+    display: none;
   }
   .section-1,
   .section-3 {
@@ -488,7 +491,7 @@ footer {
   .section-2 .container .box {
     width: 100%;
     text-align: center;
-    padding: 40px 0;
+    padding: 40px;
   }
   .yacht,
   .bow {
@@ -505,6 +508,10 @@ footer {
   .winTrip {
     padding: 80px 0;
     text-align: center;
+    padding-right: 0;
+  }
+  .winTrip .aside {
+    padding: 50px 100px;
   }
   .galleryItem {
     width: 100%;
@@ -518,8 +525,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .wrapper {
-    width: 90%;
+  .cruiseship img {
+    display: none;
+    width: 10%;
   }
   header nav li a {
     padding: 0 30px;
@@ -532,14 +540,14 @@ footer {
     padding-top: 40px;
     margin: 0 auto;
   }
+  .section-6 .gallery .galleryItem {
+    width: 400px;
+  }
 }
 
 @media (max-width: 600px) {
   header nav li {
     padding-bottom: 50px;
-  }
-  .cruiseship img {
-    width: 450px;
   }
 }
 
@@ -1020,16 +1028,16 @@ html {
   font-size: 62.5%;
 }
 
-.wrapper {
-  width: 85%;
-  max-width: 1280px;
+body {
+  background-color: #EAFEFC;
+  max-width: 2000px;
   margin: 0 auto;
-  padding: 0;
 }
 
-body {
-  margin: 0;
-  background-color: #EAFEFC;
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 h1,

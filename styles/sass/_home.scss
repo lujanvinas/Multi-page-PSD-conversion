@@ -1,5 +1,11 @@
 
 
+
+
+img{
+    width: 100%;
+}
+
 header{
     background-image: url('assets/home-header.jpg');
     background-repeat: no-repeat;
@@ -19,29 +25,37 @@ header{
     flex-grow: 1;
     flex-direction: column;
     justify-content: flex-end;
-    
-
-
 }
 
 .cruiseship {
     width: 50%;
+    position:absolute;
+    right:0;
+    bottom:-120px;
+    width:50%;
 
     img{
-        position:absolute;
-        right:0;
-        top:23%;
-        width:60%;
+        max-width: 1000px;
     }
     
 }
 
-
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5,
+.section-6,
+footer {
+    margin: 0 auto;
+    width: 100vw;
+}
 
 // section-1 styles
 
 .section-1{
     padding:120px 0;
+    margin: 0 auto;
 
 
     .flexContainer{
@@ -61,7 +75,6 @@ header{
 
             h2{
                 display: inline-block;
-               
             }
 
 }
@@ -87,7 +100,6 @@ header{
         top: 10px;
         right: 12px;
 
-
     }
 
 }
@@ -98,21 +110,18 @@ header{
 
 // section-2 styles
 
-
 .section-2{
     background-color: $primaryColor;
-    width: 100%;
-    position:relative;
-    
 
     .container{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        padding:50px 0;
+        position:relative;
 
         .box{
             width: 50%;
+            position: relative;
 
             p{
                 color:$secondaryColor;
@@ -125,9 +134,7 @@ header{
 
 .locations{
     text-align: right;
-    padding-right: 100px;
-    padding-top: 50px;
-
+    padding: 50px 150px;
 
     p{
         text-align: left;
@@ -135,28 +142,31 @@ header{
 }
 
 .programs{
-    padding-left: 100px;
+    padding-left: 120px;
+    padding-top: 100px;
+    padding-right: 170px;
 }
 
-
-.section-2 img{
-    width: 43%;
-    box-shadow: 17px 17px $colorBtn;
-    position: absolute;
+.bow {
+    padding-left: 150px;
 }
 
 .bow img{
     box-shadow: -17px 17px $colorBtn;
-    right:0;
-    bottom:-50px;
-    
+    bottom:-110px;
+    position: relative;
+}
+
+.yacht {
+    padding-right: 150px;
 }
 
 .yacht img{
-    left:0;
+    box-shadow: 17px 17px $colorBtn;
     top:-50px;
-}
+    position: relative;
 
+}
 
 
 
@@ -165,7 +175,7 @@ header{
 
 .section-3{
     text-align: center;
-    padding:100px 0;
+    padding:150px 0 100px 0;
 
     p{
         text-align: left;
@@ -173,16 +183,8 @@ header{
 }
 
 
-// section-4 styles
-
-.section-4 {
-    width: 100vw;
- 
-}
-
 
 // section-5 styles
-
 
 .winTrip{
     display:flex;
@@ -193,11 +195,11 @@ header{
 
     .aside{
         flex: 1 0 400px;
+        padding-right: 100px;
         
 
         img{
            box-shadow: -17px 17px $colorBtn;
-           width: 400px;
            padding-top: 30px;
            margin-bottom: 40px;
         }
@@ -211,10 +213,7 @@ header{
 
 
 
-
 // section-6 styles
-
-
 
 .section-6{
     background-color: $primaryColor;
@@ -228,9 +227,7 @@ header{
     
         .galleryItem{
             flex:0 1 auto;
-            width:400px;
-
-            
+            width:32%;
             
         }
     }
@@ -254,48 +251,32 @@ footer{
 
 @media(max-width:1200px){
 
-    header{
-        height: auto;
+
+    header nav {
+    justify-content: center;
     
-        nav {
-        justify-content: center;
-        
-            li {
-                padding-bottom:100px;
-    
-                a {
-                padding: 0 40px;
-                
-                }
-    
+        li {
+            padding-bottom:100px;
+
+            a {
+            padding: 0 40px;
+            
             }
+
         }
     }
 
     
     .feature{
         width: 100%;
-        height: auto;
         display: block;
         text-align: center;
-        padding-top:50px;
+        padding-top:150px;
     }
-    
 
 
     .cruiseship {
-        width: 100%;
-        display:block;
-        margin:0 auto;
-        padding:50px 0;
-
-        img{
-            position:static;
-            margin:0 auto;
-            display:block;
-            width: 600px;
-        }    
-             
+        display: none; 
     }
 
     .section-1,
@@ -320,8 +301,7 @@ footer{
         .box {
             width: 100%;
             text-align: center;
-            padding:40px 0;
-
+            padding:40px;
         }
     }
 
@@ -342,13 +322,16 @@ footer{
     }
     
 
-
-    .winTrip{
+    .winTrip {
         padding: 80px 0;
         text-align: center;
+        padding-right:0;
         
-    }
 
+        .aside {
+            padding: 50px 100px;
+        }
+    }
 
     .galleryItem{
         width: 100%;
@@ -367,8 +350,10 @@ footer{
 
 @media(max-width:768px){
 
-    .wrapper{
-        width:90%;
+    
+    .cruiseship img {
+        display: none;
+        width:10%;
     }
 
     header nav li a {
@@ -385,6 +370,12 @@ footer{
         margin:0 auto;
     }
 
+    
+.section-6 .gallery .galleryItem  {
+        width:400px;
+        
+    }
+
 }
 
 
@@ -394,9 +385,6 @@ footer{
         padding-bottom: 50px;
     }
 
-
-    .cruiseship img {
-        width: 450px;
-    }
-
 }
+
+
