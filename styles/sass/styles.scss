@@ -119,10 +119,9 @@ nav{
         text-transform: capitalize;
         margin:0 auto;
         padding: 50px 0;
-          
     
 
-        a{
+        a {
             text-decoration: none;
             color:$secondaryColor;
             padding-right:50px;
@@ -139,3 +138,43 @@ a:hover span{
     
 }
 
+
+// Media Queries
+
+@media(max-width:768px) {
+
+    html{
+    font-size: 55%;
+
+        h1 {
+            line-height: 100px;
+        }
+    }
+
+    header {
+        height: auto;
+    }
+
+    button {
+    font-size: 2rem;
+    padding:10px;
+    }
+}
+
+
+
+@media(max-width:600px) {
+    h1{
+        font-size: 6rem;
+        }
+
+    h2 {
+        font-size: 4rem;
+        line-height: 66px;
+    }
+
+    nav{
+        display: none;
+    }
+
+}

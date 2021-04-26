@@ -251,7 +251,6 @@ footer{
 
 @media(max-width:1200px){
 
-
     header nav {
     justify-content: center;
     
@@ -262,10 +261,8 @@ footer{
             padding: 0 40px;
             
             }
-
         }
     }
-
     
     .feature{
         width: 100%;
@@ -285,14 +282,12 @@ footer{
         text-align: center;
     }
 
-
     .flexItem {
         text-align: center;
 
         p{
             margin:0;
         }
-        
     }
 
     .section-2 .container {
@@ -321,7 +316,6 @@ footer{
 
     }
     
-
     .winTrip {
         padding: 80px 0;
         text-align: center;
@@ -340,42 +334,28 @@ footer{
         
         img{
             width: 100%;
-            display:block;
-            
+            display:block;   
         }
-        
     }
 }
 
 
 @media(max-width:768px){
 
-    
-    .cruiseship img {
-        display: none;
-        width:10%;
-    }
-
     header nav li a {
         padding: 0 30px;
     }
 
-    header h1{
-        font-size: 7rem;
+    .section-1 .flexContainer {
+        display: block;
     }
-
-    .feature{
+    .section-1 .flexItem {
         width: 100%;
-        padding-top:40px;
-        margin:0 auto;
     }
 
-    
-.section-6 .gallery .galleryItem  {
-        width:400px;
-        
+    .section-6 .gallery .galleryItem  {
+        width:400px;   
     }
-
 }
 
 

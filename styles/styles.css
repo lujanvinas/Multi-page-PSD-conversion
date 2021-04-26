@@ -525,20 +525,14 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .cruiseship img {
-    display: none;
-    width: 10%;
-  }
   header nav li a {
     padding: 0 30px;
   }
-  header h1 {
-    font-size: 7rem;
+  .section-1 .flexContainer {
+    display: block;
   }
-  .feature {
+  .section-1 .flexItem {
     width: 100%;
-    padding-top: 40px;
-    margin: 0 auto;
   }
   .section-6 .gallery .galleryItem {
     width: 400px;
@@ -563,6 +557,10 @@ footer {
 
 .blog header h1 {
   color: #FFFFFF;
+}
+
+.blog h2 {
+  padding-top: 10px;
 }
 
 .blog .feature {
@@ -854,17 +852,20 @@ label {
 }
 
 @media (max-width: 600px) {
-  .blog nav {
-    display: none;
-  }
   .blog h1 {
     padding-top: 200px;
   }
   .imageLeft {
-    width: 100%;
+    width: 70%;
+    padding-bottom: 50px;
+  }
+  .imageRight img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .containerAside .aside {
     width: 100%;
+    margin: 0 auto;
   }
   .containerContent .content {
     padding: 30px;
@@ -884,6 +885,15 @@ label {
   }
   .blog form {
     padding: 30px;
+  }
+  .blog form input[type="text"][class="name"] {
+    margin-right: 0;
+  }
+  .blog form button {
+    width: 50%;
+    padding: 5px;
+    margin: 30px auto;
+    display: block;
   }
 }
 
@@ -1022,6 +1032,19 @@ label {
   .contact h1 {
     padding-top: 100px;
   }
+  .contact .section-1 {
+    padding: 0;
+  }
+  .formContact {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 30px;
+  }
+  .formContact button {
+    width: 50%;
+    padding: 5px;
+    margin: 30px auto;
+  }
 }
 
 html {
@@ -1144,4 +1167,33 @@ nav li a {
 a:hover span {
   border-bottom: 3px solid #FDD908;
   padding-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+  html h1 {
+    line-height: 100px;
+  }
+  header {
+    height: auto;
+  }
+  button {
+    font-size: 2rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 4rem;
+    line-height: 66px;
+  }
+  nav {
+    display: none;
+  }
 }
