@@ -112,7 +112,6 @@ label {
     display: none;
     color: white;
     font-size: 4rem;
-    margin: 0 40px 0 0;
     line-height: 70px;
 
 }
@@ -168,12 +167,12 @@ a:hover span{
     font-size: 55%;
 
         h1 {
-            line-height: 100px;
+            line-height: 80px;
         }
     }
 
-    header {
-        height: auto;
+    header nav li a {
+        padding: 0 30px;
     }
 
     button {
@@ -232,7 +231,7 @@ a:hover span{
         display: none;
     }
 
-    
+
     .scale-in-tr {
         -webkit-animation: scale-in-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 animation: scale-in-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -282,6 +281,33 @@ a:hover span{
       opacity: 1;
     }
   }
-  
+}
 
+@media(max-width:500px) {
+
+    h1{
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3.3rem;
+        line-height: 40px;
+        padding: 20px 0;
+    }
+
+    h3 {
+        font-size: 3rem;
+        line-height: 60px;
+    }
+
+    p {
+        font-size: 2rem;
+        line-height: 28px;
+    }
+}
+
+@media(max-width:425px) {
+    html {
+        font-size: 45%;
+    }
 }

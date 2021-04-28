@@ -247,7 +247,6 @@ footer{
 
 
 
-
 // media Queries
 
 @media(max-width:1200px){
@@ -266,10 +265,12 @@ footer{
     }
     
     .feature{
-        width: 100%;
+        width: 90%;
         display: block;
         text-align: center;
-        padding-top:150px;
+        padding-top: 200px;
+        margin: 0 auto;
+        line-height: 100px;
     }
 
 
@@ -343,12 +344,9 @@ footer{
 
 @media(max-width:768px){
 
-    header nav li a {
-        padding: 0 30px;
-    }
-
     .section-1 .flexContainer {
         display: block;
+        padding: 0;
     }
     .section-1 .flexItem {
         width: 100%;
